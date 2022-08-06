@@ -28,7 +28,7 @@ function AddPeopleForm(props) {
 
 function PeopleList(props) {
   const data = props.data;
-  let listItems = data.map((data, index) => {return <li key={index}>{data}</li> });
+  let listItems = data.map((data, index) => {return <li key={index} draggable>{data}</li> });
   return <>
   <h2>My Contacts</h2>
   <ul>{listItems}</ul>
